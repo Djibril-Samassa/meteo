@@ -1,38 +1,104 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../public/Poppins/Poppins-Regular.ttf");
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 95vh;
+  background: #FFD580;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 5vh;
 }
 
-.App-link {
-  color: #61dafb;
+.formulaire {
+  color: #12152d;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formulaire>input {
+  font-weight: bold;
+  margin: 10px;
+  outline: none;
+  width: fit-content;
+  color: #9A4215;
+  border: 3px solid #9A4215;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.formulaire>button {
+  font-weight: bold;
+  margin: 10px;
+  outline: none;
+  width: fit-content;
+  color: #f1f1f1;
+  background-color: #9A4215;
+  border: 3px solid #9A4215;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  transform: scale(1);
+  transition-duration: 300ms;
+}
+
+.formulaire>button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+h2,
+h3 {
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.weather-info {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #9A4215;
+  color: #f1f1f1;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.req{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image {
+  width: 50px;
+}
+
+.unit-toggle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.unit-toggle>:nth-child(n) {
+  margin: 10px;
+}
+
+
+.formulaire>input:focus {
+  color: #9A4215;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins";
+}
+
+.prev {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 2px solid black;
 }
